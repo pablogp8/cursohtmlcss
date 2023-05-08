@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Imagenes</title>
+    </head>
+    <body>
+        <input type="submit" value="Nombre Btn">
+        <button type="submit">Enviar fd</button>
+        <main>
+            <!--<Select name="cursos" id="">
+                <option value="JavaScript">JavaScript</option>
+                <option value="HTML5">HTML5</option>
+                <option value="CS5">CSS</option>
+            </Select>-->
+            <input list="cursos">
+            <datalist id="cursos"> <!--para hacer un combobox con busqueda-->
+                <option value="JavaScript">JavaScript</option>
+                <option value="HTML5">HTML5</option>
+                <option value="CS5">CSS</option>
+            </datalist>
+        </main>
+        <section>
+            <label for="nombre">
+                <span>¿Cuál es tu nombre?</span>
+                <input type="text" id="nombre" name="nombre" autocomplete="name" required/>
+            </label>
+            <label for="correo">
+                <span>¿Cuál es tu correo?</span>
+                <input type="email" id="correo" name="correo" autocomplete="email" required/>
+            </label>
+            <label for="pais">
+                <span>¿En qué pais vives?</span>
+                <input type="text" id="pais" name="pais" autocomplete="country" required/>
+            </label>
+            <label for="cp">
+                <span>¿Cuál es tu código postal?</span>
+                <input type="text" id="cp" name="cp" autocomplete="postal-code" required/>
+            </label>
+            <input type="submit" />
+
+            <!--<form action="">
+                <label for="calendario">
+                    <span>Calendario</span>
+                    <input type="datetime-local" id="calendario" name="calendario" />
+                </label>
+                <input type="submit" />
+            </form>
+
+            <form>
+                <label for="hora">
+                    <span>Hora</span>
+                    <input type="time" id="hora" name="hora" />
+                </label>
+                <label for="dia">
+                    <span>Dia</span>
+                    <input type="date" id="dia" name="dia" />
+                </label>
+                <label for="semana">
+                    <span>Semana</span>
+                    <input type="week" id="semana" name="semana" />
+                </label>
+                <label for="mes">
+                    <span>Mes</span>
+                    <input type="month" id="mes" name="mes" />
+                </label>
+                <input type="submit" />
+            </form>-->
+        </section>
+        <section>
+            <form action="">
+                <label for="nombre">
+                    <span>¿Cuál es tu nombre?</span>
+                    <input type="text" id="nombre" placeholder="nombre"/>
+                </label>
+                <label for="inicio-platzi">
+                    <span>¿Qué día comenzaste en platzi?</span>
+                    <input type="date" id="nombre" />
+                </label>
+                <label for="horario">
+                    <span>¿En qué horario estudias?</span>
+                    <input type="time" id="horario" />
+                </label>
+            </form>
+        </section>
+        <section>
+            <figure>
+                <img src="./pics/tinified/small2.jpg" alt="Perrito pequeño">
+                <figcaption>Es un perrito loco</figcaption>
+            </figure>            
+        </section>
+        <section>
+            <video  controls preload="auto">
+                <source src="./clasevideo/2023-01-09 15-04-54.mp4#t=15,60"> <!--sirven varios por si algún formato no lo acepta el navegador se va al siguiente-->
+                <source src="./clasevideo/2023-01-09 15-04-54.mv4#t=15,60">
+            </video>
+        </section>
+    </body>
+</html>

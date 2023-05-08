@@ -1,0 +1,76 @@
+p {
+    color: blue;
+    font-size: 30px;
+}
+/*comentarios */
+
+/*Class*/
+.clase{
+
+}
+
+/*id*/
+#id {
+
+}
+
+/*seudo clases*/
+
+.clase etiqueta:pseudoclass{
+
+}
+
+/*pseudo elementos*/
+
+.clase etiqueta::pseudoelemnt {
+
+}
+
+
+/*****************************************/
+
+/*Algunos Pseudo-classes:
+:root{}
+//representa elemento HTML, con la especificidad de clase //usado para anidar variables CSS
+:active
+//se activa al hacer clic down
+:visited
+//cambio visual cuando se visita un enlace
+:hover
+//permite cambiar el estado de un elemento cuando elmause se sobrepone sobre él
+:first-child // para afectar solo al primer hijo // se coloca en el padre (ul) para afectar a su primer hijo (li)
+:last-child // para afectar solo al ultimo hijo
+:not  //negar una codiciones (ignorar una condicion) //ejemplo .clase:not(last-child)
+//afecto a todos menos el ultimo
+:empty 
+//ayuda a detectar cuando un elemento esta vacio. //ejemplo .class:empty{background:yellow;} //resaltar
+:nth-child() 
+// tag:nth-child(2){} //afectara al segundo elemento*/
+
+
+.main-nav {
+    margin-top: 10px;
+    list-style: none;
+    padding-left: 0;
+    background-color: #13a4a4;
+  }
+  .main-nav__item {
+    display: inline-block;
+  }
+  .main-nav__item a {
+    color: white;
+    padding: 5px;
+    border-radius: 2px;
+    text-decoration: none;
+  }
+  
+  .main-nav__item a:hover {
+    color: blue;
+  }
+  .main-nav__item a:active {
+    color: red;
+  }
+  
+  .main-nav__item a::after {
+    content: " | ";
+  }
