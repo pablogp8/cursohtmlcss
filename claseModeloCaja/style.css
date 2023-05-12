@@ -1,0 +1,11 @@
+*{
+    box-sizing: border-box; /*para poder hacer que encaje cabal en la pantalla*/
+    padding: 0; /*tanto este padding como el margin quitan el que viene por defecto en las pantallas*/
+    margin: 0;
+}
+main {
+    width: 100%;
+    height: 500px;
+    border: 10px solid grey;
+    padding: 20px 53px;
+}
