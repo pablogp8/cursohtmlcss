@@ -14,24 +14,33 @@ body{
 .container{
     border: 0.3rem solid black;
     display: flex;
-    justify-content: center;
+    justify-content: center;/*varias formas de centrar el contenido*/
+    height: 50vh;
     flex-wrap: wrap;
+    align-items: center;
 }
 .box{
-    width: 10rem;
+    
     height: 10rem;
+    flex-basis: 10rem;
+    flex-grow: 1;/*se utiliza para que si se reduce el tamaño se vayan acoplando*/
 }
 .box1{
     background-color: blue;
+    order:2;/*cambia el orden que se muestra los box, los que no tengan order se mandan a la izquierda*/
 }
 .box2{
     background-color: blueviolet;
+    order: 5;
+    flex-grow: 2;/*rellena el espacio vacio con el tamaño completo*/
 }
 .box3{
     background-color: burlywood;
+    flex-grow: 1;
 }
 .box4{
     background-color: aqua;
+    order:1;
 }
 .box5{
     background-color: yellow;
